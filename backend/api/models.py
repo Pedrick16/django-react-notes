@@ -5,7 +5,7 @@ from .models import *
 class Note(models.Model):
     body = models.CharField(max_length=250)
     updated = models.DateTimeField(auto_now=True)
-    create_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.body
